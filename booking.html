@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking | Pearl Continental</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #d4af37;
+      background: url('images/booking2.webp') no-repeat center center/cover;
+    }
+
+    header {
+      padding: 30px 40px;
+      background-color: rgba(10, 10, 10, 0.85);
+      text-align: center;
+      border-bottom: 1px solid #d4af37;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: 3px;
+    }
+
+    .booking-section {
+      max-width: 700px;
+      margin: 60px auto;
+      background-color: rgba(17, 17, 17, 0.85);
+      padding: 40px;
+      border: 1px solid #d4af37;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+      backdrop-filter: blur(4px);
+    }
+
+    .booking-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #d4af37;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #e7c66a;
+    }
+
+    form input,
+    form select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+      background-color: rgba(17, 17, 17, 0.8);
+      color: #d4af37;
+      font-size: 16px;
+    }
+
+    form button {
+      width: 100%;
+      padding: 14px;
+      background-color: #d4af37;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #f0d87a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(10, 10, 10, 0.85);
+      border-top: 1px solid #333;
+      color: #888;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 20px; margin: 0; background-color: #0a0a0a; border-bottom: 1px solid #d4af37;">
+    <li><a href="index.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Home</a></li>
+    <li><a href="about.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">About Us</a></li>
+    <li><a href="dining.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Dining</a></li>
+    <li><a href="rooms.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Rooms</a></li>
+    <li><a href="events.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Events</a></li>
+    <li><a href="booking.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Booking</a></li>
+    <li><a href="contact.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Contact</a></li>
+  </ul>
+</nav>
+
+  <header>
+    <h1>Book Your Stay</h1>
+  </header>
+
+  <section class="booking-section">
+        <h2>Reservation Form</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="room">Room Type</label>
+      <select id="room" required>
+        <option value="">Select a room</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="suite">Executive Suite</option>
+        <option value="presidential">Presidential Suite</option>
+      </select>
+
+      <label for="checkin">Check-In Date</label>
+      <input type="date" id="checkin" required>
+
+      <label for="checkout">Check-Out Date</label>
+      <input type="date" id="checkout" required>
+
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" min="1" placeholder="e.g., 2" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Pearl Continental Hotel | All rights reserved
+  </footer>
+
+</body>
+</html>
