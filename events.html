@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Events</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #000;
+            color: #d4af37;
+        }
+        header {
+            background-color: #d4af37;
+            color: #000;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #111;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .events {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .event {
+            background-color: rgba(212, 175, 55, 0.1);
+            border: 1px solid #d4af37;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            width: 80%;
+            max-width: 900px;
+            padding: 20px;
+            text-align: center;
+        }
+        .event img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .event h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+  <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 20px; margin: 0; background-color: #0a0a0a; border-bottom: 1px solid #d4af37;">
+    <li><a href="index.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Home</a></li>
+    <li><a href="about.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">About Us</a></li>
+    <li><a href="rooms.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Rooms</a></li>
+    <li><a href="dining.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Dining</a></li>
+    <li><a href="events.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Events</a></li>
+    <li><a href="booking.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Booking</a></li>
+    <li><a href="contact.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Contact</a></li>
+  </ul>
+</nav>
+    <header>
+        <h1>Hotel Luxury Events</h1>
+    </header>
+    
+    <section class="events">
+        <div class="event">
+            <h2>Royal Gala Evening</h2>
+            <p>Join us for a night of elegance and music in our grand ballroom.</p>
+            <img src="images/grand gala.jpg" alt="Royal Gala Evening">
+        </div>
+        <div class="event">
+            <h2>Executive Business Summit</h2>
+            <p>Connect with industry leaders at our premium business networking event.</p>
+            <img src="images/business sumit.jpg" alt="Business Summit">
+        </div>
+        <div class="event">
+            <h2>Luxury Wedding Showcase</h2>
+            <p>Experience the magic of a dream wedding hosted at our hotel.</p>
+            <img src="images/wedding.jpg" alt="Luxury Wedding Showcase">
+        </div>
+    </section>
+</body>
+</html>
