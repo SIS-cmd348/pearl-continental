@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Pearl Continental</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: url('images/contact.webp') no-repeat center center/cover;
+      color: #d4af37;
+    }
+
+    header {
+      padding: 30px 40px;
+      background-color: #0a0a0a;
+      text-align: center;
+      border-bottom: 1px solid #d4af37;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: 2px;
+    }
+
+    .contact-section {
+      max-width: 700px;
+      margin: 60px auto;
+      background-color: rgba(17, 17, 17, 0.9);
+      padding: 40px;
+      border: 1px solid #d4af37;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #d4af37;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #e7c66a;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+      background-color: #111;
+      color: #d4af37;
+      font-size: 16px;
+    }
+
+    form input::placeholder,
+    form textarea::placeholder {
+      color: #aaa;
+    }
+
+    form button {
+      width: 100%;
+      padding: 14px;
+      background-color: #d4af37;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #f0d87a;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 40px;
+      color: #c7b67d;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0a0a0a;
+      border-top: 1px solid #333;
+      color: #888;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-section {
+        margin: 30px 20px;
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 20px; margin: 0; background-color: #0a0a0a; border-bottom: 1px solid #d4af37;">
+    <li><a href="index.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Home</a></li>
+    <li><a href="about.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">About Us</a></li>
+    <li><a href="dining.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Dining</a></li>
+    <li><a href="rooms.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Rooms</a></li>
+    <li><a href="events.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Events</a></li>
+    <li><a href="booking.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Booking</a></li>
+    <li><a href="contact.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Contact</a></li>
+  </ul>
+</nav>
+
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <section class="contact-section">
+    <h2>We'd Love to Hear From You</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="your@email.com" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" placeholder="Message Subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +92 300 1234567</p>
+      <p><strong>Email:</strong> info@pearlcontinental.com</p>
+      <p><strong>Address:</strong> Pearl Continental Hotel, Main Boulevard, Lahore, Pakistan</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Pearl Continental Hotel | All rights reserved
+  </footer>
