@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hotel Rooms</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #000000, #4b3b00); /* black to dark golden */
+            color: #FFD700; /* golden text */
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-shadow: 0 0 8px #FFD700;
+        }
+
+        .rooms-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .room-card {
+            background: #1c1c1c; /* dark card background */
+            border: 2px solid #FFD700;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px #b8860b;
+            transition: transform 0.3s ease;
+        }
+
+        .room-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #ffd700;
+        }
+
+        .room-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            filter: brightness(0.85);
+            transition: filter 0.3s ease;
+        }
+
+        .room-card:hover .room-image {
+            filter: brightness(1);
+        }
+
+        .room-content {
+            padding: 20px;
+        }
+
+        .room-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #FFD700;
+            padding-bottom: 8px;
+        }
+
+        .room-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #f0e68c; /* light golden */
+            margin-bottom: 15px;
+        }
+
+        .room-price {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+
+        @media(max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+  <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 20px; margin: 0; background-color: #0a0a0a; border-bottom: 1px solid #d4af37;">
+    <li><a href="index.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Home</a></li>
+    <li><a href="about.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">About Us</a></li>
+    <li><a href="rooms.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Rooms</a></li>
+     <li><a href="dining.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Dining</a></li>
+    <li><a href="events.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Events</a></li>
+    <li><a href="booking.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Booking</a></li>
+    <li><a href="contact.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Contact</a></li>
+  </ul>
+</nav>
+
+
+    <h1>Our Luxury Rooms</h1>
+
+    <div class="rooms-container">
+        <div class="room-card">
+            <img class="room-image" src="images/delux1.jpeg" alt="Delux room" />
+            <div class="room-content">
+                <h2 class="room-title">Deluxe Room</h2>
+                <p class="room-description">
+                    Experience luxury and comfort with our Deluxe Room featuring a king-sized bed, modern amenities, and a stunning city view.
+                </p>
+                <p class="room-price">Starting at $120 / night</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img class="room-image" src="images/suite 1.jpeg" alt="Suite Room" />
+            <div class="room-content">
+                <h2 class="room-title">Suite Room</h2>
+                <p class="room-description">
+                    Spacious suite with separate living area, premium furnishings, and exclusive access to our VIP lounge.
+                </p>
+                <p class="room-price">Starting at $250 / night</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img class="room-image" src="images/standard1.jpeg" alt="Standard Room" />
+            <div class="room-content">
+                <h2 class="room-title">Standard Room</h2>
+                <p class="room-description">
+                    Cozy and affordable, perfect for travelers who want comfort without breaking the bank.
+                </p>
+                <p class="room-price">Starting at $80 / night</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
