@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dining | Pearl Continental Hotel</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    .hero-section {
+      background: url('images/dinning\ tabe.jpeg')  no-repeat center center/cover;
+      height: 80vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-section .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      color: #ffd700;
+      text-align: center;
+      padding: 40px;
+      width: 100%;
+    }
+
+    .hero-section h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero-section p {
+      font-size: 1.2em;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #ffd700;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e6be00;
+    }
+
+    .intro, .menu-section, .reservation {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .menu-section h2, .intro h2, .reservation h2 {
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    .menu-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .menu-item {
+      background: #1a1a1a;
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
+    }
+
+    .menu-item h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .reservation {
+      background-color: #111;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 20px; margin: 0; background-color: #0a0a0a; border-bottom: 1px solid #d4af37;">
+    <li><a href="index.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Home</a></li>
+    <li><a href="about.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">About Us</a></li>
+    <li><a href="rooms.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Rooms</a></li>
+    <li><a href="dining.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Dining</a></li>
+    <li><a href="events.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Events</a></li>
+    <li><a href="booking.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Booking</a></li>
+    <li><a href="contact.html" style="text-decoration: none; color: #d4af37; font-weight: bold;">Contact</a></li>
+  </ul>
+</nav>
+  <header class="hero-section">
+    <div class="overlay">
+      <h1>Fine Dining Experience</h1>
+      <p>Indulge in gourmet cuisine crafted by world-class chefs</p>
+      <a href="#menu" class="btn">View Menu</a>
+    </div>
+  </header>
+
+  <section class="intro">
+    <h2>Welcome to Our Restaurant</h2>
+    <p>Enjoy a fusion of local and international flavors in a luxurious black & gold setting. Perfect for any occasion – morning to midnight.</p>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <h2>Our Signature Dishes</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Grilled Salmon</h3>
+        <img src="images/grilled.jpeg" alt="Grilled Salmon">
+        <p>Served with garlic mashed potatoes and steamed vegetables.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Lamb Chops</h3>
+        <img src="images/lamb chops.jpeg" alt="lamb chops">
+        <p>Herb-marinated and flame-grilled, served with a mint sauce.</p>
+      </div>
+      <div class="menu-item">
+                <h3>Vegetarian Platter</h3>
+                <img src="images/vagetarian.jpeg" alt="vagetarian">
+        <p>A seasonal selection of fresh vegetarian delicacies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservation">
+    <h2>Book a Table</h2>
+    <p>Reserve your seat now and enjoy the richness of fine dining.</p>
+    <a href="/booking.html" class="btn">Reserve Now</a>
+  </section>
+</body>
+</html>
